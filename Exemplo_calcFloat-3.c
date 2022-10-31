@@ -2,7 +2,6 @@
 
 int main()
 {
-
     float x, y, z;
     char op;
     printf("Entre com um valor inteiro x = ");
@@ -11,9 +10,7 @@ int main()
     scanf(" %c", &op);
     printf("Entre com outro valor inteiro y = ");
     scanf("%f", &y);
-
-    switch (op)
-    {
+    switch (op){
     case '+':
         z = x + y;
         printf("%.2f + %.2f = %.2f\n", x, y, z);
@@ -36,7 +33,6 @@ int main()
         break;
     default:
         printf("Operador não é valido!!!!!\n");
-        break;
     }
     
 }

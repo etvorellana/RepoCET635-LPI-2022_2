@@ -18,5 +18,18 @@ int main(void)
         printf("%lu\n", b);
     else
         printf("-%lu\n", b);
+
+    unsigned long int d = b;
+    int p2 = 1;
+    while(d != 0)
+    {
+        c += p2 * (d % 10);
+        d /= 10;
+        p2*= 2;
+    }
+
+    c = a < 0 ? -c:c;
+    printf("%d\n", c);
+
     return 0;
 }
